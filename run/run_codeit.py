@@ -110,7 +110,7 @@ def filter_and_load_mutated_tasks(mutated_train_tasks):
     return filtered_mutated_tasks
 
 
-@hydra.main(version_base=None, config_path="config", config_name="base_config")
+@hydra.main(config_path="config", config_name="base_config")
 def main(config: Any) -> None:
 
     print("\n" + "=" * 10, "Configuration", "=" * 10)
